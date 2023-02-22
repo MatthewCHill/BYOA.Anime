@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		34F437E229A6A531005BD36B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F437E129A6A531005BD36B /* AppDelegate.swift */; };
 		34F437E429A6A531005BD36B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F437E329A6A531005BD36B /* SceneDelegate.swift */; };
-		34F437E629A6A531005BD36B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F437E529A6A531005BD36B /* ViewController.swift */; };
 		34F437E929A6A531005BD36B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34F437E729A6A531005BD36B /* Main.storyboard */; };
 		34F437EB29A6A535005BD36B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34F437EA29A6A535005BD36B /* Assets.xcassets */; };
 		34F437EE29A6A535005BD36B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34F437EC29A6A535005BD36B /* LaunchScreen.storyboard */; };
+		34F437F829A6ABD4005BD36B /* AnimeQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F437F729A6ABD4005BD36B /* AnimeQuote.swift */; };
+		34F437FA29A6AD06005BD36B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F437F929A6AD06005BD36B /* Constants.swift */; };
+		34F437FD29A6AF66005BD36B /* AnimeQuoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F437FC29A6AF66005BD36B /* AnimeQuoteController.swift */; };
+		34F4380029A6B36A005BD36B /* QuoteGeneratorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F437FF29A6B36A005BD36B /* QuoteGeneratorViewController.swift */; };
+		34F4380229A6B375005BD36B /* QuoteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F4380129A6B375005BD36B /* QuoteDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		34F437DE29A6A531005BD36B /* BYOA.Anime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BYOA.Anime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34F437E129A6A531005BD36B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34F437E329A6A531005BD36B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		34F437E529A6A531005BD36B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		34F437E829A6A531005BD36B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		34F437EA29A6A535005BD36B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34F437ED29A6A535005BD36B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		34F437EF29A6A535005BD36B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34F437F729A6ABD4005BD36B /* AnimeQuote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeQuote.swift; sourceTree = "<group>"; };
+		34F437F929A6AD06005BD36B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		34F437FC29A6AF66005BD36B /* AnimeQuoteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeQuoteController.swift; sourceTree = "<group>"; };
+		34F437FF29A6B36A005BD36B /* QuoteGeneratorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteGeneratorViewController.swift; sourceTree = "<group>"; };
+		34F4380129A6B375005BD36B /* QuoteDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +64,12 @@
 		34F437E029A6A531005BD36B /* BYOA.Anime */ = {
 			isa = PBXGroup;
 			children = (
+				34F437FE29A6B329005BD36B /* ViewController */,
+				34F437F629A6ABAD005BD36B /* Model */,
 				34F437F529A6A585005BD36B /* SupportingFiles */,
-				34F437E529A6A531005BD36B /* ViewController.swift */,
 				34F437E729A6A531005BD36B /* Main.storyboard */,
 				34F437EC29A6A535005BD36B /* LaunchScreen.storyboard */,
+				34F437FB29A6AF4E005BD36B /* ModelController */,
 			);
 			path = BYOA.Anime;
 			sourceTree = "<group>";
@@ -71,8 +81,34 @@
 				34F437E329A6A531005BD36B /* SceneDelegate.swift */,
 				34F437EA29A6A535005BD36B /* Assets.xcassets */,
 				34F437EF29A6A535005BD36B /* Info.plist */,
+				34F437F929A6AD06005BD36B /* Constants.swift */,
 			);
 			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		34F437F629A6ABAD005BD36B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				34F437F729A6ABD4005BD36B /* AnimeQuote.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		34F437FB29A6AF4E005BD36B /* ModelController */ = {
+			isa = PBXGroup;
+			children = (
+				34F437FC29A6AF66005BD36B /* AnimeQuoteController.swift */,
+			);
+			path = ModelController;
+			sourceTree = "<group>";
+		};
+		34F437FE29A6B329005BD36B /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				34F437FF29A6B36A005BD36B /* QuoteGeneratorViewController.swift */,
+				34F4380129A6B375005BD36B /* QuoteDetailViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,9 +182,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34F437E629A6A531005BD36B /* ViewController.swift in Sources */,
+				34F4380229A6B375005BD36B /* QuoteDetailViewController.swift in Sources */,
+				34F437FD29A6AF66005BD36B /* AnimeQuoteController.swift in Sources */,
 				34F437E229A6A531005BD36B /* AppDelegate.swift in Sources */,
 				34F437E429A6A531005BD36B /* SceneDelegate.swift in Sources */,
+				34F437F829A6ABD4005BD36B /* AnimeQuote.swift in Sources */,
+				34F437FA29A6AD06005BD36B /* Constants.swift in Sources */,
+				34F4380029A6B36A005BD36B /* QuoteGeneratorViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,7 +336,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = BYOA.Anime/Info.plist;
+				INFOPLIST_FILE = BYOA.Anime/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -323,7 +363,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = BYOA.Anime/Info.plist;
+				INFOPLIST_FILE = BYOA.Anime/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
